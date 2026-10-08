@@ -1,0 +1,136 @@
+/* Explorer styleSheet */
+*{
+    margin: 0;   
+    padding: 0;
+}
+body{
+    background: linear-gradient(100deg, #f4f4ee, #00000077);
+    background-attachment: fixed;
+}
+header{
+    background-color: #4949c7e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    padding: 20px 0;
+}
+header h1{
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: white;
+    font-family: monospace;
+
+    margin-top: 5px;
+    position: absolute;
+    left: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+    gap: 10px;
+}
+input{
+    padding: 10px 50px;
+    font-family: monospace;
+    font-size: 1.2em;
+
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+button{
+    color: white;
+    background-color: green;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #10c510;
+}
+button:active{
+    background-color: rgba(0, 128, 0, 0.797);
+}
+
+/* page content */
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Profile data being fetched  */
+.profile-info{
+    width: 30%;
+    /* border: 1px solid; */
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 10px;
+    /* margin-left: 10%; */
+
+    
+}
+.profile img{
+    border-radius: 50%;
+    border: 2px solid white;
+
+    width: 300px;
+    margin: 10px;
+}
+.profile h1{
+    color: #000000cd;
+}
+.profile p{
+    font-size: 1.4em;
+    
+}
+
+/* Repos screen */
+.repos{
+    width: 70%;
+    max-height: 80vh;
+    /* border: 1px solid; */
+    padding: 20px 30px;
+    gap: 20px;
+
+    overflow-y: scroll;
+}
+.repos::-webkit-scrollbar{
+    width: 2px;
+}
+.repo-display{
+    /* border: 1px solid; */
+}
+.repos h2{
+    background-color: white;
+    padding: 10px ;
+    /* margin-bottom: 10px; */
+
+    font-family: 'Times New Roman', Times, serif;
+    /* text-decoration: underline; */
+}
+.repos h3{
+    padding: 10px;
+    background-color: #00000022;
+
+}
+a{
+    padding: 30px;
+    margin-bottom: 30px;
+    
+    /* text-decoration: none; */
+}
